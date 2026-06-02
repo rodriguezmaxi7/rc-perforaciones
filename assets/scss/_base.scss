@@ -1,0 +1,25 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: v.$font-cuerpo;
+    background-color: v.$color-fondo;
+    color: v.$color-texto; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: v.$color-acento;
+}

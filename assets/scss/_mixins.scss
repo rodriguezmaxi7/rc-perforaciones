@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == 'movil' {
+        @media (max-width: v.$breakpoint-movil) {
+            @content;
+        }
+    } @else if $breakpoint == 'tablet' {
+        @media (max-width: v.$breakpoint-tablet) {
+            @content;
+        }
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
