@@ -1,17 +1,78 @@
-/* Error: @use rules must be written before any other rules.
- *   ,
- * 2 | @use 'variables' as v;
- *   | ^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   assets\scss\styles.scss 2:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: @use rules must be written before any other rules.\a   \2577 \a 2 \2502  @use 'variables' as v;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\scss\\styles.scss 2:1  root stylesheet";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "roboto", sans-serif;
+  background-color: #f4f7fa;
+  color: #1a1a2e;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #4db8e8;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-color: #0a2342;
+  padding: 1rem 2rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.header__logo-icono {
+  background-color: #4db8e8;
+  color: #0a2342;
+  font-family: "oswald", sans-serif;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+.header__logo-texto {
+  color: #ffffff;
+  font-family: "oswald", sans-serif;
+  font-size: 1.5rem;
+}
+
+.header__nav .header_lista {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.header__nav .header_lista li {
+  position: relative;
+  list-style: none;
+}
+.header__nav a {
+  color: #ffffff;
+  font-family: "roboto", sans-serif;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+.header__nav a:hover {
+  color: #4db8e8;
+}
+
+/*# sourceMappingURL=styles.css.map */

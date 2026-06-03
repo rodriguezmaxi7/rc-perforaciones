@@ -1,0 +1,57 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.header {
+    background-color: v.$color-primario;
+    padding: 1rem 2rem;
+}
+
+.header__container {
+   @include m.flex-between;
+}
+
+.header__logo{
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   text-decoration: none;
+
+   &-icono {
+    background-color: v.$color-acento;
+    color: v.$color-primario;
+    font-family: v.$font-titulo;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+   }
+
+    &-texto {
+     color: v.$color-blanco;
+     font-family: v.$font-titulo;
+     font-size: 1.5rem;
+    }
+}
+
+.header__nav {
+    .header_lista{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    
+    li {
+        position: relative;
+        list-style: none;
+    }
+    }
+
+    a {
+        color: v.$color-blanco;
+        font-family: v.$font-cuerpo;
+        font-size: 0.95rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: v.$color-acento;
+        }
+    }
+}
