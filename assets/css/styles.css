@@ -75,4 +75,51 @@ ul {
   color: #4db8e8;
 }
 
+.hero {
+  background-image: url("../img/maquina_de_perforar.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 35, 66, 0.65);
+}
+.hero__contenido {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+}
+.hero__titulo {
+  font-family: "oswald", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero__titulo span {
+  color: #4db8e8;
+}
+.hero__subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.hero__btn {
+  background-color: #4db8e8;
+  color: #0a2342;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+.hero__btn:hover {
+  background-color: #ffffff;
+}
+
 /*# sourceMappingURL=styles.css.map */

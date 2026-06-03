@@ -1,0 +1,59 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.hero { 
+    background-image: url('../img/maquina_de_perforar.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(10,35, 66, 0.65);
+    }
+
+    &__contenido {
+        position: relative;
+       z-index: 1;
+       text-align: center;
+        color: v.$color-blanco;
+    }
+ 
+        &__titulo {
+            font-family: v.$font-titulo;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        
+        span {
+            color: v.$color-acento;
+        }
+    }
+
+
+        &__subtitulo {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(v.$color-blanco, 0.9);
+        }
+
+        &__btn {
+            background-color: v.$color-acento;
+            color: v.$color-primario;
+           padding: 0.8rem 2rem;
+           border-radius: 4px;
+           font-weight: 700;
+           transition: background-color 0.3s ease;
+        
+
+        &:hover {
+            background-color: v.$color-blanco;
+        }
+
+    }
+}
