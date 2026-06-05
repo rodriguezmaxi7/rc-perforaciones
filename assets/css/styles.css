@@ -56,7 +56,7 @@ ul {
   font-size: 1.5rem;
 }
 
-.header__nav .header_lista {
+.header__nav .header__lista {
   display: flex;
   gap: 1.5rem;
   list-style: none;
@@ -195,6 +195,41 @@ ul {
 .cta__btn:hover {
   background-color: #ffffff;
   color: #0a2342;
+}
+
+.footer {
+  background-color: #0a2342;
+  color: #ffffff;
+  padding: 4rem 2rem 2rem;
+}
+.footer__logo-icono {
+  background-color: #4db8e8;
+  color: #0a2342;
+  font-family: "oswald", sans-serif;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__titulo {
+  font-family: "oswald", sans-serif;
+  color: #4db8e8;
+  margin-bottom: 1rem;
+}
+.footer__copy {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

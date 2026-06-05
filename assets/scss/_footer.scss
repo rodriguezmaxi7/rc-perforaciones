@@ -1,0 +1,41 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.footer {
+    background-color: v.$color-primario;
+    color: v.$color-blanco;
+    padding: 4rem 2rem 2rem;
+
+    &__logo-icono {
+        background-color: v.$color-acento;
+        color: v.$color-primario;
+        font-family: v.$font-titulo;
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__titulo {
+        font-family: v.$font-titulo;
+        color: v.$color-acento;
+        margin-bottom: 1rem;
+    }
+
+   &__copy {
+        text-align: center;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid rgba(v.$color-blanco, 20%);
+        font-size: 0.85rem;
+    }
+   }
