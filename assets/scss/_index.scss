@@ -49,11 +49,67 @@
            border-radius: 4px;
            font-weight: 700;
            transition: background-color 0.3s ease;
-        
 
         &:hover {
             background-color: v.$color-blanco;
         }
 
+    }
+}
+
+.servicios {
+    padding: 4rem 2rem;
+    background-color: v.$color-primario;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+&__titulo {
+    font-family: v.$font-titulo;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: v.$color-blanco;
+}
+&__grilla {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.servicio-card {
+    background-color: v.$color-blanco;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__cuerpo {
+        padding: 1.5rem;
+    }
+
+    &__titulo {
+        font-family: v.$font-titulo;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: v.$color-primario;
+    }
+   
+    &__texto {
+        font-size: 0.95rem;
+        color: v.$color-texto;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 }
