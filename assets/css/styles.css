@@ -169,4 +169,32 @@ ul {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.cta {
+  background-color: #4db8e8;
+  color: #0a2342;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.cta__titulo {
+  font-family: "oswald", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cta__texto {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta__btn {
+  background-color: #0a2342;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+.cta__btn:hover {
+  background-color: #ffffff;
+  color: #0a2342;
+}
+
 /*# sourceMappingURL=styles.css.map */
