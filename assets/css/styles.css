@@ -27,7 +27,7 @@ ul {
 }
 
 .header {
-  background-color: #0a2342;
+  background-color: #0a2342 !important;
   padding: 1rem 2rem;
 }
 
@@ -80,6 +80,20 @@ ul {
 }
 .header__nav a:hover {
   color: #4db8e8;
+}
+
+.header__lista .nav-link {
+  color: #ffffff !important;
+}
+.header__lista .nav-link:hover {
+  color: #4db8e8 !important;
+}
+
+.navbar-toggler {
+  border-color: #4db8e8 !important;
+}
+.navbar-toggler .navbar-toggler-icon {
+  filter: invert(1);
 }
 
 .hero {

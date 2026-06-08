@@ -2,7 +2,7 @@
 @use 'mixins' as m;
 
 .header {
-    background-color: v.$color-primario;
+    background-color: v.$color-primario !important;
     padding: 1rem 2rem;
 }
 
@@ -56,5 +56,21 @@
         &:hover {
             color: v.$color-acento;
         }
+    }
+}
+
+.header__lista .nav-link {
+    color: v.$color-blanco !important;
+
+    &:hover {
+    color: v.$color-acento !important;
+    }
+}
+
+.navbar-toggler {
+    border-color: v.$color-acento !important;
+
+    .navbar-toggler-icon {
+        filter: invert(1);
     }
 }
