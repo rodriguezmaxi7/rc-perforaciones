@@ -59,7 +59,7 @@
 
 .servicios {
     padding: 4rem 2rem;
-    background-color: v.$color-primario;
+    background-color: v.$color-fondo;
 
     &__container {
         max-width: 1200px;
@@ -70,7 +70,7 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: v.$color-blanco;
+    color: v.$color-primario;
 }
 &__grilla {
     display: grid;

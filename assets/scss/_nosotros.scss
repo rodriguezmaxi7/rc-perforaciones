@@ -28,6 +28,28 @@
          line-height: 1.6;
     }
 
+    &__servicios {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+            color:v.$color-texto;
+            font-size: 0.95rem;
+            padding-left: 1rem;
+            position: relative;
+        
+            &::before {
+                content: '✓';
+                color: v.$color-acento;
+                position: absolute;
+                left: 0;
+                font-weight: 700;
+            }
+        }
+    }
+
     &__imagen {
         height: 100%;
 
