@@ -8,6 +8,10 @@
 
 .header__container {
    @include m.flex-between;
+
+   @include m.responsive('tablet') {
+    flex-wrap: wrap;
+   }
 }
 
 .header__logo{
@@ -37,6 +41,10 @@
     display: flex;
     gap: 1.5rem;
     list-style: none;
+    }
+
+    @include m.responsive('tablet') {
+        display: none;
     }
 
     a {

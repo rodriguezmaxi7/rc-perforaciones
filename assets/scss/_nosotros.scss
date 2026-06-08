@@ -12,6 +12,10 @@
         gap: 3rem;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+
+        @include m.responsive('tablet'){
+            grid-template-columns: 1fr;
+        }
     }
 
     &__titulo {

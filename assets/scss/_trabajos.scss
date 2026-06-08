@@ -8,7 +8,8 @@
     &__container {
         max-width: 1200px;
         margin: 0 auto;
-    }
+
+          }
 
     &__titulo {
         font-family: v.$font-titulo;
@@ -39,6 +40,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
+        
+        @include m.responsive('tablet'){
+            grid-template-columns: 1fr;
+        } 
     }
 }
 
