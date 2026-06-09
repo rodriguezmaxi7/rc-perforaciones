@@ -1,8 +1,9 @@
 @use "variables" as v;
 @use "mixins" as m;
+@use 'extends';
 
 .trabajos {
-    padding: 4rem 2rem;
+    @extend %seccion-padding;
     background-color: v.$color-fondo;
 
     &__container {
@@ -15,7 +16,7 @@
         font-family: v.$font-titulo;
         font-size: 2.5rem;
         color: v.$color-primario;
-        text-align: center;
+        @extend %texto-centrado;
         margin-bottom: 0.5rem;
 
       &::after {
