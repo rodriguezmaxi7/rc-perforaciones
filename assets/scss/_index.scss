@@ -2,6 +2,23 @@
 @use 'mixins' as m;
 @use 'extends';
 
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes gradienteMovil {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}
+}
+
 .hero { 
     background-image: url('../img/maquina_de_perforar.png');
     background-size: cover;
@@ -30,6 +47,7 @@
             font-family: v.$font-titulo;
             font-size: 3rem;
             margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease both;
         
         span {
             color: v.$color-acento;
@@ -41,6 +59,7 @@
             font-size: 1.2rem;
             margin-bottom: 2rem;
             color: rgba(v.$color-blanco, 0.9);
+            animation: fadeInUp 0.8s ease 0.2s both;
         }
 
         &__btn {
@@ -50,6 +69,7 @@
            border-radius: 4px;
            font-weight: 700;
            transition: background-color 0.3s ease;
+           animation: fadeInUp 0.8s ease 0.4s both;
 
         &:hover {
             background-color: v.$color-blanco;
@@ -124,6 +144,9 @@
     color: v.$color-primario;
     padding: 3rem 2rem;
     text-align: center;
+    background: linear-gradient(270deg, v.$color-blanco, v.$color-secundario, v.$color-acento);
+    background-size: 400% 400%;
+    animation: gradienteMovil 12s ease infinite;
 
     &__titulo {
         font-family: v.$font-titulo;

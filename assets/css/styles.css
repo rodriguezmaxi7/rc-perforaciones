@@ -104,6 +104,27 @@ ul {
   filter: invert(1);
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes gradienteMovil {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .hero {
   background-image: url("../img/maquina_de_perforar.png");
   background-size: cover;
@@ -130,6 +151,7 @@ ul {
   font-family: "oswald", sans-serif;
   font-size: 3rem;
   margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease both;
 }
 .hero__titulo span {
   color: #4db8e8;
@@ -138,6 +160,7 @@ ul {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.9);
+  animation: fadeInUp 0.8s ease 0.2s both;
 }
 .hero__btn {
   background-color: #4db8e8;
@@ -146,6 +169,7 @@ ul {
   border-radius: 4px;
   font-weight: 700;
   transition: background-color 0.3s ease;
+  animation: fadeInUp 0.8s ease 0.4s both;
 }
 .hero__btn:hover {
   background-color: #ffffff;
@@ -210,6 +234,9 @@ ul {
   color: #0a2342;
   padding: 3rem 2rem;
   text-align: center;
+  background: linear-gradient(270deg, #ffffff, #4285c0, #4db8e8);
+  background-size: 400% 400%;
+  animation: gradienteMovil 12s ease infinite;
 }
 .cta__titulo {
   font-family: "oswald", sans-serif;
